@@ -1,62 +1,98 @@
-
-
-body{
-    font-family: "Helvetica Neue", "Helvetica", sans-serif;
-    background-color: white;
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  background-color: white;
+}
+.container{
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  margin: auto;
+  width: 100%;
+}
+.title{
+  font-size: 2rem;
+  text-align: center;
+  padding: 2px;
 }
 
-.header-container {
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid #F2F2F2;
-    padding: 1em 0;
-    background-color: lightgray;
-   }
-   
-   .logo {
-    margin: auto;
-   }
-   
-   .logo img {
-    display: block;
-   }
-   
-   nav {
-    margin: auto;;
-   }
-   
-   header ul li {
-    display: inline-block;
-    padding: 0 1.4em 0 0;
-    font-size: 0.9em;
-   }
-   
-   header ul li a {
-    text-decoration: none;
-    color: #7D7C7D;
-   }
-   
-   li a.active {
-    color: #000000;
-    border-bottom: 2px solid #000000;
-    font-weight: 300;
-   }
-   
-   li a:hover {
-    color: #B6B6B6;
-   }
-   @media screen and (min-width : 600px) {
-    .header-container {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-   
-   .logo {
-      margin-left: 2.3em;
-    }
-   
-    nav {
-      align-self: center;
-      margin: 0 0.8em 0 0;
-    }
-   }
+ul{
+  background-color: #474959;
+  border-radius: 4px;
+}
+#banner{
+  background-image: url("../../public/img/Enrique.JPG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
+}
+.text{
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 200px;
+}
+#promo{
+  background-color: #2d2923;
+  color: white;
+}
+.promo{
+  border: 1px solid #c7ccfb;
+  padding: 1px;
+  text-align: center;
+}
+.progress{
+  margin: 10px;
+}
+#portfolio{
+  background-color: #c7ccfb;
+}
+h2{
+  font-size: 2rem;
+  text-align: center;
+  padding: 2px;
+}
+.portfoliocontainer{
+  padding: 10px;
+}
+.container_aboutme{
+  display: flex;
+}
+.card_aboutme{
+  border: none;
+}
+.img-circle {
+  border-radius: 50%;
+  margin: auto;
+}
+#contact{
+  background-color: #c7ccfb;
+  padding: 20px;
+}
+table{
+  width: 100%;
+}
+input{
+  width: 100%;
+}
+textarea{
+  width: 100%;
+}
+#twitter{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+}
+.lines{
+  display: flex;
+  margin: 50px auto;
+}
+.line{
+  width: 70px;
+  height: 4px;
+  background-color: #75a9f9;
+  margin: 10px 10px;
+}

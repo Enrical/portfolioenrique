@@ -1,175 +1,208 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Personal Portfolio</title>
     <link rel="icon" href="img/favicon.png" type="image/gif" sizes="32x32">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<div class="container">
-    <header class="header-container">
-        <div class="container">
-          <div class="header-content">
-            <div class="logo">
-              <a href="#" title="home">
-                <img src="img/logo.png" width="100">
-              </a>
+    <div class="container">
+        <ul class="nav nav-pills nav-fill flex-column flex-md-row fixed-top sticky-top topnav">
+            <li class="nav-item">
+                <a class="nav-link home" href="#banner">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link skills" href="#skill">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link portfolio" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link aboutme" href="#aboutme">About me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link contact" href="#contact">Contact</a>
+            </li>
+        </ul>
+        <section id="banner" class="text">
+            <div class="greeting">
+                <p>Hi, I am
+                    <strong>Enrique Calvo.</strong>
+                </p>
             </div>
-            <nav>
-              <ul>
-                <li>
-                  <a title="home" href="#">
-                    <strong>Home</strong>
-                  </a>
-                </li>
-                <li>
-                  <a title="Skills" href="#">Menu</a>
-                </li>
-                <li>
-                  <a title="Portfolio" href="#">Coffee</a>
-                </li>
-                <li>
-                  <a title="About me" href="#">Our Story</a>
-                </li>
-                <li>
-                    <a title="Contact" href="#">Our Story</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-    </header>
-    <section id="banner" class="text">
-        <div class="greeting">
-            <p>Hi, I am <strong>Enrique Calvo.</strong></p>
-        </div>
-        <div class="whoiam">
-            <p>I'm a full-stack Web Developer</p>
-        </div>
-    </section>
+            <div class="whoiam">
+                <p>I'm a full-stack Web Developer</p>
+            </div>
+        </section>
 
-    <section id="promo">
-        <div class="column">
-            <div class="heading">
-            Discover
-            </div>
-            <div class="body">
+        <section id="promo" class="flex-md-row">
+            <div class="promo">
+                <div class="heading">
+                    Discover
+                </div>
+                <div class="body">
                     Tell me about your project and we brainstorm together the features to create a plan for your product to launch.
+                </div>
             </div>
-        </div>
-        <div class="column">
-            <div class="heading">
-                Design
-            </div>
-            <div class="body">
+            <div class="promo">
+                <div class="heading">
+                    Design
+                </div>
+                <div class="body">
                     We design the wireframe and agree together how to create the best experience for your users to present your brand.
+                </div>
             </div>
-        </div>
-        <div class="column">
-            <div class="heading">
-                    Deploy  
+            <div class="promo">
+                <div class="heading">
+                    Deploy
+                </div>
+                <div class="body">
+                    We protoype and develop your product. We work together intensily to incorporate your feedback.
+                </div>
             </div>
-            <div class="body">
-                    We protoype and develop your product. We work together intensily to incorporate your feedback.  
+            <div class="promo">
+                <div class="heading">
+                    Be Ready
+                </div>
+                <div class="body">
+                    We deploy your product and now your website is ready to get the traction. Get out there and grow your audience.
+                </div>
             </div>
-        </div>
-        <div class="column">
-            <div class="heading">
-                    Be Ready  
-            </div>
-            <div class="body">
-                    We deploy your product and now your website is ready to get the traction. Get out there and grow your audience.       
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="skill">
-        <p class="skills"><strong>My Skills</strong></p>
-        <div class="bars">
+        <section id="skill">
+            <p class="title"><strong>My Skills</strong></p>
             <div class="progress">
-                <div class="item">HTML</div>
-                <div class="item2"></div>
-                <div class="item3">80%</div>
+                <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">HTML</div>
+                <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
             </div>
             <div class="progress">
-                <div class="item">CSS</div>
-                <div class="item2"></div>
-                <div class="item3">80%</div>
+                <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">CSS</div>
+                <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
             </div>
             <div class="progress">
-                <div class="item">JavaScript</div>
-                <div class="item2 difprogress"></div>
-                <div class="item3">20%</div>
-            </div>    
-                        
+                <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+                <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20%</div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <p class="title"><strong>My Portfolio</strong></p>
+            <div class="portfoliocontainer">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top .img-responsive" src="img/item1.jpg" alt="project1">
+                            <div class="card-body">
+                                <h4 class="card-title">Car sale</h4>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </p>
+                                <a href="#!" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top .img-responsive" src="img/item1.jpg" alt="project1">
+                            <div class="card-body">
+                                <h4 class="card-title">Car sale</h4>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </p>
+                                <a href="#!" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                            <div class="card">
+                                <img class="card-img-top .img-responsive" src="img/item1.jpg" alt="project1">
+                                <div class="card-body">
+                                    <h4 class="card-title">Car sale</h4>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </p>
+                                    <a href="#!" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="aboutme">
+            <p class="title"><strong>ABOUT ME</strong></p>
+            <div class="container_aboutme flex-column flex-md-row">
+                    <img src="img/aboutme.jpg" class="ratio img-responsive img-circle" alt="Cinque Terre" width="354" height="250"> 
+            <div class="card card_aboutme">
+                <div class="card-body">
+                    <p class="card-text">My name is Enrique Calvo. I am a full-stack web developer and enjoy learning new trends. <br> <br> I am open to learning new technologies and enjoy working with people who are as passionate about all web-related as me. <br> <br>                            
+                            I have worked for clients all across the world but currently I am based in Prague, Czech Republic. <br>  <br>                          
+                            I like sports, gaming, and make new friends. <br>                            
+                            Get in touch and let's do something great together.</p>
+                    <a href="#!" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
         </div>
-    </section>
+                  
 
-    <section id="portfolio">
-            <h2>My Portfolio</h2>
-        <div class="portfoliocontainer">
-            <div class="project">
-                <img src="img/item1.jpg" alt="item1">
-                <p class="textproject">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-            <div class="project">
-                <img src="img/item1.jpg" alt="item1">
-                <p class="textproject">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-            <div class="project">
-                <img src="img/item1.jpg" alt="item1">
-                <p class="textproject">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-            <div class="project">
-                <img src="img/item1.jpg" alt="item1">
-                <p class="textproject">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-            <div class="project">
-                <img src="img/item1.jpg" alt="item1">
-                <p class="textproject">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-            <div class="project">
-                <img src="img/item1.jpg" alt="item1">
-                <p class="textproject">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="aboutme">
+        <section id="contact">
+            <p class="title"><strong>Contact me</strong></p>
+            <!--Form table-->
+                <table class="form">
+                    <tr>
+                        <td>
+                            <input class="name" type="text" placeholder="first name*">
+                        </td>
+                        <td>
+                            <input class="name" type="text" placeholder="Last name*">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="name" type="text" placeholder="Email*">
+                        </td>
+                        <td>
+                            <input class="name" type="text" placeholder="Phone">
+                        </td>
+                    </tr>
+                    
+                </table>
+                <table>
+                    <tr>
+                        <td class="message">My message *</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea class="form-control" name="morelines" placeholder="A text area" ></textarea>
+                        </td>
+                    </tr>
+                    <td>
+                        <input type="submit" value="Send" class="buttom" />
+                    </td>
+                </table>
+        </section>
 
-    </section>
-
-    <section id="contact">
-        <h3>Contact me</h3>
-        <!--Form table-->
-        <form action="post">
-            <table class="form">
-                <tr>
-                    <td><input class="name" type="text" placeholder="first name*"></td>
-                    <td><input class="name" type="text" placeholder="Last name*"></td>
-                </tr>
-                <tr>
-                    <td><input class="name" type="text" placeholder="Email*"></td>
-                    <td><input class="name" type="text" placeholder="Phone"></td>
-                </tr>
-                <tr>
-                    <td class="message">My message *</td>
-                </tr>
-                <tr>
-                    <td><textarea name="morelines" placeholder="A textarea"></textarea></td>
-                </tr>
-                <td><input type="submit" value="Buttom" class="buttom" /></td>
-            </table>
-        </form>
-    </section>
-
-    <section id="twitter">
-
-    </section>
-</div>
+        <section id="twitter">
+            <div class="lines">
+                <div class="line"></div>
+                <div class="nice"><p>NICE TO MEET YOU!</p></div>
+                <div class="line"></div>
+            </div>
+            <div class="socialmedia">
+            <i class="fab fa-github"></i>
+            <i class="fab fa-linkedin-in"></i>
+            </div>
+        </section>
+    </div>
 </body>
+
 </html>
