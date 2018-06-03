@@ -22,6 +22,7 @@ ul{
   background-color: #474959;
   border-radius: 4px;
 }
+
 #banner{
   background-image: url("../../public/img/Enrique.JPG");
   background-repeat: no-repeat;
@@ -45,6 +46,13 @@ ul{
 }
 .progress{
   margin: 10px;
+}
+.progress-bar::-webkit-progress-value {
+  transition: width 100ms ease-in-out;
+}
+.w3-button{
+  margin: auto 25%;
+  width: 50%;
 }
 #portfolio{
   background-color: #c7ccfb;
